@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.headeroverlay {
+    width:100%;
+    height:614px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index:3;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "header"
+                         "about"
+                         "vellamo"
+                         "team";
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-area: "header";
+    background-image: url("https://image.ibb.co/nFdd9K/havfadder_share.jpg");
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+    z-index:2;
+    top: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:visited {
+    color: white;
+}
+
+.menu a:hover {
+    color: lightgrey;
+}
+
+a {
+    color: black;
+        
+}
+
+.tittel, .tittel p {
+    grid-area: "header";
+    font-size: 80px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 100%;
+    z-index: 50;
+    top: 45%;
+    font-family: "Martel Sans", sans-serif;
+    
+}
+
+.tittel p {
+    font-size: 14px;
+    top: 130%;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.menu {
+    width: 100%; 
+    height: 80px;
+    background-color: black;
+    position: fixed;
+    z-index: 999;
+    top:0;
+    left: 0;
+    
+}
+
+.menu ul {
+    text-align: right;
+}
+
+.menu li {
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    margin: 35px;
+    font-family: "Roboto", sans-serif;
+    z-index: 2;
+}
+
+.about {
+    grid-area: "about";
+    width: 100%;
+    height: 615px;
+    background-color:grey;
+    position: relative;
+    
+}
+
+.about img, .vellamo img {
+    width: 350px;
+    height: 250px;
+    margin: 30px;
+    margin-top: 250px; 
+    margin-left: 250px;
+    position: absolute;
+}
+
+.about h2, .team h2 {
+    color: white;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 650px;
+    font-family: "Roboto", sans-serif;
+}
+
+.vellamo img {
+    height: 300px;
+    margin-top: 180px;
+    margin-left: 651px;
+}
+
+.bildetekst {
+    font-size: 9px;
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    top: 82%;
+    left: 39%;
+    position: absolute;
+}
+
+.about hr, .team hr {
+    width: 200px;
+    border-top: 0.5px solid white;
+    margin-top: 235px;
+    margin-left: 650px;
+    position: absolute;
+}
+
+.team h2 {
+    color: #616163;
+}
+
+.team hr {
+    border-top: 0.5px solid #616163;
+}
+
+.about p, .vellamo p, .team p {
+    color: white;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+    width: 400px;
+    height: auto;
+    margin-left: 650px;
+    margin-top: 245px;
+    position: absolute;
+}
+
+.vellamo {
+    grid-area: "vellamo";
+    width: 100%;
+    height: 615px;
+    background-color: #819078;
+    position:relative;
+}
+
+.vellamo p {
+    margin-left: 200px;
+    text-align: right;
+    width: 400px;
+}
+
+.vellamo h2 {
+    width: 200px;
+    text-align: right;
+    color: white;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 400px;
+    font-family: "Roboto", sans-serif;
+}
+
+.vellamo h2 {
+    margin-left: 400px;
+}
+
+.vellamo hr {
+    width: 200px;
+    border-top: 0.5px solid white;
+    margin-top: 235px;
+    margin-left: 400px;
+    position: absolute;
+}
+
+.team {
+    grid-area: "team";
+    width: 100%;
+    height: 614px;
+    background-color: #E8E8E8;
+    position: relative;
+}
+
+.team p {
+    color: #616163
+}
+
+
+
+.Teambilde1 img {
+    left: 15%;
+    top: 100px;
+    
+}
+.Teambilde2 img {
+    left: 15%;
+    top: 70%;
+}
+
+.Teambilde3 img {
+    left: 55%;
+    top: 100px;
+    
+}
+
+.Teambilde4 img {
+    left: 55%;
+    top: 70%;
+    
+}
+
+.Teambilde1 img, .Teambilde2 img, .Teambilde3 img, .Teambilde4 img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 9%;
+}
+
+
+.Teambilde1txt, .Teambilde2txt, .Teambilde3txt, .Teambilde4txt {
+    color: #616163;
+    font-size: 11px;
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    width: 280px;
+    text-align: left;
+    left: 25%;
+    top: 18%;
+    height: auto;
+    margin: 3px;
+    
+}
+
+.Teambilde2txt {
+    top: 18%;
+    left: 65%;
+    
+}
+
+.Teambilde3txt {
+    top: 72%;
+}
+
+.Teambilde4txt {
+    top: 72%;
+    left: 65%;
+}
